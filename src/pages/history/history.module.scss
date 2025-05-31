@@ -1,0 +1,81 @@
+.tableContainer {
+  margin-top: 20px;
+  overflow-x: auto;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--active-color);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+}
+
+.historyTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr {
+    transition: background-color 0.2s;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  th {
+    background-color: var(--active-color);
+    z-index: 1;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    border: none;
+
+    &:first-child {
+      border-radius: 10px 0 0 0;
+      -webkit-border-radius: 10px 0 0 0;
+      -moz-border-radius: 10px 0 0 0;
+      -ms-border-radius: 10px 0 0 0;
+      -o-border-radius: 10px 0 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 10px 0 0;
+    }
+
+    &:hover {
+      cursor: auto;
+    }
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+tbody {
+  tr:hover {
+    opacity: .8;
+  }
+}

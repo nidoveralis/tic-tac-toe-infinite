@@ -1,0 +1,42 @@
+.modal {
+  position: absolute;
+  z-index: 1;
+  background: #000000af;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    background-color: #fff;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+    padding: 20px;
+    color: #000000;
+    position: relative;
+  }
+
+  &__btn {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(159, 2, 2);
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-image: url(../../assets/x.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px;
+  }
+}

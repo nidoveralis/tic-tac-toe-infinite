@@ -1,0 +1,34 @@
+.cell {
+  cursor: pointer;
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid #0000006d;
+
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(100% - 5px);
+
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  &_o {
+    background-image: url('../../assets/zero.svg');
+  }
+
+  &_x {
+    background-image: url('../../assets/x.svg');
+  }
+
+  &_win {
+    background-color: var(--active-color);
+  }
+}
